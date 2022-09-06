@@ -8,20 +8,21 @@ import dominio.Familia;
 public class CriterioRendaFamiliar implements Criterio {
 
 	@Override
-	public int pontuacao(Familia familia) {
+	public void pontuacao(Familia familia) {
 		
-		int pontuacao = 0;
+		Integer pontuacao = familia.getPontuacao();
 		
 		if(familia.getRenda() <= 900) {
 			
-			pontuacao = 5;
+			pontuacao = pontuacao + 5;
 			
 		} else if(familia.getRenda() >= 901 && familia.getRenda() <= 1500) {
 			
-			pontuacao = 3;
+			pontuacao = pontuacao + 3;
 			
 		}
 		
-		return pontuacao;
+		familia.setPontuacao(pontuacao);
+		
 	}
 }

@@ -20,7 +20,11 @@ public class FabricaCriterio {
     	criterios.put("NumeroDependentes", new CriterioNumeroDependentes());
     }
     
-    // Função que retorna a instância de Criterio a partir do critério especificado 
+    public Map<String, Criterio> getCriterios() {
+		return criterios;
+	}
+
+	// Função que retorna a instância de Criterio a partir do critério especificado 
     public Criterio pegarCriterio(String criterio) {
     	
         return criterios.get(criterio);
