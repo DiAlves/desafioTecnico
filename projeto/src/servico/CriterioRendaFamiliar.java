@@ -2,6 +2,9 @@ package servico;
 
 import dominio.Familia;
 
+/*
+ * Classe que implementa o critério de renda total da família
+ */
 public class CriterioRendaFamiliar implements Criterio {
 
 	@Override

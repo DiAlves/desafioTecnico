@@ -3,6 +3,9 @@ package servico;
 import dominio.Familia;
 import dominio.Pessoa;
 
+/*
+ * Classe que implementa o critério de número de dependentes de uma Família
+ */
 public class CriterioNumeroDependentes implements Criterio {
 
 	@Override
