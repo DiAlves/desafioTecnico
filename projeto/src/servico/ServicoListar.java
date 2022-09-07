@@ -24,7 +24,7 @@ public class ServicoListar {
 					
 		}
 		
-		// Realiza a ordenação da lista de Famílias 
+		// Realiza a ordenação da lista de Famílias
 		Collections.sort(familias, Collections.reverseOrder());
 		
 		return familias;

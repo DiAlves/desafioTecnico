@@ -65,6 +65,11 @@ public class Familia implements Comparable<Familia> {
 	}
 
 	@Override
+	public String toString() {
+		return "Familia do(a) " + responsavel.getNome() + " - Pontuação = " + pontuacao;
+	}
+
+	@Override
     public int compareTo(Familia f) {
         return this.getPontuacao().compareTo(f.getPontuacao());
     }
