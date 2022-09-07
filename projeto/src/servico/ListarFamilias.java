@@ -10,7 +10,7 @@ import recurso.FabricaCriterio;
 /*
  * Classe que tem o método capaz de ordenar as famílias pela pontuação
  */
-public class ServicoListar {
+public class ListarFamilias {
 	
 	public static List<Familia> ordenacaoPorPontuacao(List<Familia> familias, FabricaCriterio fabrica) {
 		

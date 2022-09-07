@@ -6,7 +6,7 @@ import java.util.List;
 import dominio.Familia;
 import dominio.Pessoa;
 import recurso.FabricaCriterio;
-import servico.ServicoListar;
+import servico.ListarFamilias;
 
 /*
  * Classe para demonstração
@@ -54,9 +54,9 @@ public class Programa {
 		listaFamilia.add(familia3);
 
 		
-		List<Familia> familiasListadas = ServicoListar.ordenacaoPorPontuacao(listaFamilia, new FabricaCriterio());
+		List<Familia> familiasListadas = ListarFamilias.ordenacaoPorPontuacao(listaFamilia, new FabricaCriterio());
 		
-		System.out.println("------ Listagem das Famílias ------");
+		System.out.println("------ Listagem das Famílias ------\n");
 		
 		for(Familia familia : familiasListadas) {
 			
